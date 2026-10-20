@@ -1,0 +1,133 @@
+/* Original Wix styles are inline in each page. Local adjustments go here. */
+html { scroll-behavior: smooth; }
+/* Wix custom elements retain their server-rendered children without the Wix runtime. */
+wix-image, wow-image { display: block; }
+.wixui-image, .wixui-rich-text, .wixui-vector-image, .wixui-button { opacity: 1 !important; }
+/* Wix normally reveals these content groups after its animations initialize. */
+.wH18kY { opacity: 1 !important; }
+#img_comp-jb3n1k1j { opacity: 0 !important; }
+wix-dropdown-menu { display: block; }
+wix-dropdown-menu [data-index] { height: 50px; }
+wix-dropdown-menu [data-index] p { line-height: 50px; }
+wix-dropdown-menu [data-index="__more__"] { display: none !important; }
+wix-dropdown-menu li { position: relative; }
+wix-dropdown-menu li > ul { position: absolute; top: 50px; background: white; min-width: 130px; padding: 12px; list-style: none; z-index: 100; }
+wix-dropdown-menu li > ul a { display: block; padding: 8px; color: #34636a; }
+/* Match the official white, italic Resources menu. */
+#SITE_HEADER wix-dropdown-menu, #SITE_HEADER wix-dropdown-menu nav,
+#SITE_HEADER wix-dropdown-menu nav > ul { overflow: visible !important; }
+wix-dropdown-menu li:has(> ul) { z-index: 100; }
+wix-dropdown-menu li > ul { top: 100%; right: 0; min-width: 105px; margin: 0; padding: 4px 0 10px; border: 0; background: white; }
+wix-dropdown-menu li > ul li { height: auto; }
+wix-dropdown-menu li > ul a { padding: 7px 16px; font: italic 14px/1.2 Arial, sans-serif; color: #094a58; text-decoration: none; white-space: nowrap; text-align: center; }
+wix-dropdown-menu li > ul a:hover, wix-dropdown-menu li > ul a:focus-visible { background: #eef7f7; }
+wix-dropdown-menu [role="button"] { cursor: pointer; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+.contact-email-note { max-width: 425px; font: 12px/1.5 Arial, sans-serif; color: #094a58; margin: 12px 0; }
+.sponsor-website { cursor: pointer; }
+.sponsor-website:focus-visible { outline: 3px solid #00b9bb; outline-offset: 5px; }
+.sponsor-community-link { color: inherit; text-decoration: underline; text-underline-offset: 4px; }
+/* Center the remaining logo in the Bronze tier's first row. */
+[data-mesh-id="comp-jlr9gwjjinlineContent-gridContainer"] > #comp-jp55111a { left: 321px !important; }
+.tsunami-video iframe { display: block; width: 100%; height: 100%; border: 0; }
+.tsunami-video { background: #000; }
+.tsunami-video-link { display: block; color: white; font: 14px/1.5 Arial, sans-serif; padding: 10px 0; }
+#comp-lgbnjohq .item-link-wrapper { display: block; position: absolute; top: 0; width: 297px; height: 395px; }
+#comp-lgbnjohq .item-link-wrapper[data-idx="0"] { left: 0; }
+#comp-lgbnjohq .item-link-wrapper[data-idx="1"] { left: 307px; width: 296px; }
+#comp-lgbnjohq .item-link-wrapper[data-idx="2"] { left: 613px; }
+#comp-lgbnjohq .item-link-wrapper[data-idx="3"] { left: 920px; width: 296px; }
+#comp-lgbnjohq .item-link-wrapper > .gallery-item-container { left: 0 !important; }
+#comp-lgbnjohq .gallery-item-hover {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .35) !important;
+  opacity: 0 !important;
+  transition: opacity .2s ease;
+  pointer-events: none;
+}
+#comp-lgbnjohq .item-link-wrapper:hover .gallery-item-hover,
+#comp-lgbnjohq .item-link-wrapper:focus-within .gallery-item-hover { opacity: 1 !important; }
+#comp-lgbnjohq .robot-hover-title {
+  color: #fff;
+  font: 700 30px/1.2 Arial, sans-serif;
+  text-align: center;
+  padding: 12px;
+}
+@media (hover: none) {
+  #comp-lgbnjohq .gallery-item-hover { opacity: 1 !important; }
+}
+
+/* Shared light and dark appearance, with a persistent corner switch. */
+:root { --site-paper: #fafbf8; --site-surface: #fff; --site-ink: #142b30; --site-muted: #52676c; --site-line: #cbd9d9; --site-accent: #007c83; color-scheme: light; }
+html[data-theme="dark"] { --site-paper: #10191b; --site-surface: #172326; --site-ink: #edf5f5; --site-muted: #b2c6c9; --site-line: #3c555b; --site-accent: #52dbd7; color-scheme: dark; }
+body { background-color: var(--site-paper); }
+.site-theme-toggle { position: fixed; top: 12px; right: 16px; z-index: 10000; display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 9px 12px; border: 1px solid var(--site-line); border-radius: 6px; background: var(--site-surface); color: var(--site-ink); font: 600 13px/1.2 Arial, sans-serif; cursor: pointer; }
+.site-theme-toggle svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.site-theme-toggle:hover { border-color: var(--site-accent); }
+.site-theme-toggle:focus-visible { outline: 3px solid var(--site-accent); outline-offset: 3px; }
+.site-theme-toggle .theme-moon, html[data-theme="dark"] .site-theme-toggle .theme-sun { display: none; }
+html[data-theme="dark"] .site-theme-toggle .theme-moon { display: block; }
+html[data-theme="dark"] .theme-vars { --color_11: 16,25,27 !important; --color_12: 60,85,91 !important; --color_13: 178,198,201 !important; --color_15: 237,245,245 !important; --color_19: 8,74,79 !important; --color_29: 82,219,215 !important; --color_36: 23,35,38 !important; --color_38: 60,85,91 !important; --color_42: 82,219,215 !important; --color_43: 8,74,79 !important; --color_45: 237,245,245 !important; --color_46: 178,198,201 !important; }
+#SITE_HEADER [data-testid="screenWidthContainerBg"], #SITE_HEADER [data-testid="screenWidthContainerBgCenter"],
+#SITE_FOOTER [data-testid="screenWidthContainerBg"], #SITE_FOOTER [data-testid="screenWidthContainerBgCenter"] { background-color: var(--site-surface) !important; }
+wix-dropdown-menu li > ul, .archive-mobile-nav details div { background: var(--site-surface) !important; }
+html[data-theme="dark"] #SITE_HEADER p, html[data-theme="dark"] wix-dropdown-menu li > ul a,
+html[data-theme="dark"] .archive-mobile-nav a, html[data-theme="dark"] .archive-mobile-nav summary { color: var(--site-accent) !important; }
+html[data-theme="dark"] wix-dropdown-menu li > ul a:hover, html[data-theme="dark"] wix-dropdown-menu li > ul a:focus-visible { background: #243b40; }
+html[data-theme="dark"] #SITE_HEADER #comp-jhvqr123 img { filter: brightness(0) invert(1); }
+html[data-theme="dark"] .contact-email-note { color: var(--site-muted); }
+html[data-theme="dark"] #SITE_FOOTER .wixui-rich-text, html[data-theme="dark"] #SITE_FOOTER .wixui-rich-text * { color: var(--site-ink) !important; }
+html[data-theme="dark"] #SITE_FOOTER input { background: var(--site-paper) !important; color: var(--site-ink) !important; border-color: var(--site-line) !important; }
+html[data-theme="dark"] #SITE_FOOTER input::placeholder { color: var(--site-muted) !important; opacity: 1; }
+/* These supplied sponsor logos are white artwork; make them black on light panels. */
+#bgLayers_comp-jlr9h5hd [data-testid="colorUnderlay"], #bgLayers_comp-jlr9gwjj [data-testid="colorUnderlay"] { background-color: var(--site-paper) !important; }
+#bgLayers_comp-jlr9gqxw [data-testid="colorUnderlay"] { background-color: #eaf5f5 !important; }
+#comp-jlr9h5hd .wixui-rich-text *, #comp-jlr9gqxw .wixui-rich-text *, #comp-jlr9gwjj .wixui-rich-text * { color: var(--site-ink) !important; }
+#comp-jlr9h5hd .sponsor-website img, #comp-jlr9gqxw .sponsor-website img, #comp-jlr9gwjj .sponsor-website img { filter: brightness(0); }
+html[data-theme="dark"] #bgLayers_comp-jlr9gqxw [data-testid="colorUnderlay"] { background-color: #122d32 !important; }
+html[data-theme="dark"] #comp-jlr9h5hd .sponsor-website img, html[data-theme="dark"] #comp-jlr9gqxw .sponsor-website img, html[data-theme="dark"] #comp-jlr9gwjj .sponsor-website img { filter: none; }
+html[data-theme="dark"] .robot-archive { --ink: #edf5f5; --paper: #10191b; --line: #3c555b; }
+html[data-theme="dark"] .robot-archive p { color: var(--site-muted); }
+html[data-theme="dark"] .robot-archive .year-nav a { background: #172c30; }
+html[data-theme="dark"] .robot-archive .robot-visual { background: #172326; border-color: #3c555b; }
+html[data-theme="dark"] .robot-archive .version-label { color: #67e1dd; background: #173538; border-color: #356268; }
+html[data-theme="dark"] .robot-archive .honor-badge { color: #f5d67b; background: #332c18; border-color: #8c783d; }
+html[data-theme="dark"] .robot-archive .honor-badge small { color: #e0cea0; }
+html[data-theme="dark"] .robot-archive .honor-badge.finalist { color: #9adce9; background: #143139; border-color: #356d7b; }
+html[data-theme="dark"] .robot-archive .honor-badge.finalist small { color: #a8d0d8; }
+html[data-theme="dark"] #SITE_HEADER { background: var(--site-surface) !important; }
+html[data-theme="dark"] [id^="bgLayers_pageBackground_"] [data-testid="colorUnderlay"],
+html[data-theme="dark"] #bgLayers_comp-jlraydod [data-testid="colorUnderlay"] { background-color: var(--site-paper) !important; }
+/* The home hero retains its light photograph in both modes. */
+#comp-jn2xhnj5 .wixui-rich-text__text { color: #094a58 !important; }
+#comp-jlraydod .wixui-button__label { color: var(--site-accent) !important; }
+@media (max-width: 600px) { .site-theme-toggle { right: 10px; top: 12px; min-height: 36px; padding: 8px 10px; } }
+
+/* Resource pages use the same palette and saved appearance as the rest of the site. */
+.local-resource-page { background: var(--site-paper); color: var(--site-ink); min-height: 65vh; padding: 70px 24px 90px; font: 16px/1.7 Arial, sans-serif; }
+.resource-wrap { max-width: 980px; margin: auto; }
+.resource-eyebrow { color: var(--site-accent); text-transform: uppercase; letter-spacing: 2px; font-size: 12px; }
+.local-resource-page h1 { font-size: clamp(36px, 6vw, 64px); line-height: 1.2; margin: 20px 0; }
+.resource-intro { color: var(--site-muted); font-size: 20px; margin-bottom: 36px; }
+.resource-status { max-width: 760px; background: var(--site-surface); border: 1px solid var(--site-line); padding: 32px; }
+.resource-status h2 { font-size: 24px; margin: 0 0 14px; }
+.resource-status p { color: var(--site-muted); margin: 16px 0; }
+.resource-status a { color: var(--site-accent); text-underline-offset: 3px; }
+.resource-status .resource-button { display: inline-block; padding: 10px 16px; margin: 8px 0; border: 1px solid var(--site-accent); color: var(--site-accent); text-decoration: none; font-weight: bold; }
+.resource-status a:focus-visible { outline: 3px solid var(--site-accent); outline-offset: 4px; }
+.resource-status blockquote { border-left: 3px solid var(--site-accent); margin: 24px 0; padding: 8px 20px; color: var(--site-ink); }
+@media (max-width: 1000px) {
+  body:has(.local-resource-page) [id^="pageBackground_"] { width: 100% !important; min-width: 0 !important; }
+}
+
+/* Keep the official background loops visible without Wix's video initializer. */
+wix-video.local-background-animation { display: block; opacity: 1 !important; overflow: hidden; }
+wix-video.local-background-animation > video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0 !important; z-index: 1; }
+wix-video.local-background-animation.is-playing > video { opacity: 1 !important; }
+wix-video.local-background-animation.is-playing > .bgVideoposter { opacity: 0 !important; }
+@media (prefers-reduced-motion: reduce) {
+  wix-video.local-background-animation > video { opacity: 0 !important; }
+  wix-video.local-background-animation > .bgVideoposter { opacity: 1 !important; }
+}
