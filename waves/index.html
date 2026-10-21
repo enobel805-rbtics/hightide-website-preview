@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>HighTide · FRC Team 4414 · World Champions</title>
+    <meta
+      name="description"
+      content="We are HighTide, FIRST Robotics Competition Team 4414 from Ventura, California: a world championship winning high school robotics team. Meet Ripcurrent, our 2026 robot, apply to join, and buy our merch."
+    />
+    <meta name="theme-color" content="#094a58" />
+    <meta property="og:title" content="We are HighTide · FRC Team 4414" />
+    <meta
+      property="og:description"
+      content="A world championship winning high school robotics team from Ventura, California."
+    />
+    <meta property="og:image" content="./media/og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="preload"
+      href="./media/robot/ripcurrent.glb"
+      as="fetch"
+      type="model/gltf-binary"
+      crossorigin
+    />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <script>
+      // .js: scripts run. .webgl: Ripcurrent can be drawn live, so its stills wait for the drawing.
+      (function (d) {
+        d.classList.add("js");
+        try {
+          if (document.createElement("canvas").getContext("webgl2")) d.classList.add("webgl");
+        } catch (e) {}
+      })(document.documentElement);
+    </script>
+    <script type="module" crossorigin src="./assets/index-Cg6YleST.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BnToh6f5.css">
+  <link rel="stylesheet" href="./waves.css">
+    <script type="module" src="./fuel.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="nav">
+      <a class="wordmark" href="#top" aria-label="HighTide, Team 4414">
+        <span class="wordmark__high">HIGH</span><span class="wordmark__tide">TIDE</span>
+      </a>
+      <nav class="nav__links" aria-label="Sections">
+        <a href="#ripcurrent">Ripcurrent</a>
+        <a href="#join">Join</a>
+        <a href="#merch">Merch</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <img class="hero__ocean" src="./media/crashing-wave.gif" width="960" height="540" alt="" aria-hidden="true">
+        <h1 class="hero__title" id="hero-title">
+          <span class="line"><span class="line__in">We are</span></span>
+          <span class="line"><span class="line__in">HighTide.</span></span>
+        </h1>
+        <div class="slot hero__robot" id="hero-robot">
+          <img
+            class="slot__still"
+            src="./media/robot/together.webp"
+            width="1500"
+            height="1200"
+            alt="Ripcurrent, HighTide's 2026 robot, drawn in teal lines from the team's CAD"
+          />
+        </div>
+        <div class="hero__band">
+          <p class="hero__lede">
+            A world championship winning high school robotics team from Ventura, California.
+          </p>
+          <a
+            class="button"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc440uEf1ipPwRY7QsOOTcfV6rrFr2jQ8zDA5O3M65KvYIGPA/viewform"
+            >Apply to join</a
+          >
+        </div>
+      </section>
+
+      <section
+        class="scene showcase"
+        id="ripcurrent"
+        data-scene="ripcurrent"
+        aria-labelledby="rc-title"
+      >
+        <div class="scene-stage">
+          <div class="showcase__intro">
+            <h2 class="stack" id="rc-title">
+              <span class="stack__line is-muted">Introducing</span>
+              <span class="stack__line">Ripcurrent.</span>
+            </h2>
+            <div class="slot showcase__robot" id="show-robot"></div>
+            <div class="showcase__facts">
+              <p>
+                Our 2026 robot, and the world champion on Einstein in Houston. Students designed,
+                machined, wired and programmed all of it.
+              </p>
+              <p class="showcase__how">
+                This is the team's own CAD, drawn live. Drag to turn it, and keep scrolling to take
+                it apart.
+              </p>
+            </div>
+          </div>
+          <div class="showcase__apart">
+            <div class="slot showcase__apart-robot" id="apart-robot">
+              <img
+                class="slot__still"
+                src="./media/robot/apart.webp"
+                width="960"
+                height="1500"
+                alt="Ripcurrent pulled apart into its six subsystems, stacked from the drivetrain up to the shooter"
+                loading="lazy"
+              />
+            </div>
+            <ol class="parts" aria-label="Ripcurrent's six subsystems">
+              <li class="part" data-part="shooter">
+                <h3>Shooter</h3>
+                <p>Four Kraken X44s and .25″ copper flywheels that store energy for every shot.</p>
+              </li>
+              <li class="part" data-part="turret">
+                <h3>Turret</h3>
+                <p>55.7:1 on one Kraken X44, with a flex-wheel cable-chain tensioner.</p>
+              </li>
+              <li class="part" data-part="rotor">
+                <h3>Dye Rotor</h3>
+                <p>A 36.4:1 rotation reduction.</p>
+              </li>
+              <li class="part" data-part="intake">
+                <h3>Intake</h3>
+                <p>84+ balls under the trench, 100+ over the bump.</p>
+              </li>
+              <li class="part" data-part="bumpers">
+                <h3>Bumpers</h3>
+                <p>Structural. They double as hopper walls.</p>
+              </li>
+              <li class="part" data-part="drivetrain">
+                <h3>Drivetrain</h3>
+                <p>A 25″ × 32″ swerve base, geared 7.67:1 for low current draw.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="fuel-scene" id="fuel" aria-labelledby="fuel-title">
+        <div class="fuel-stage">
+          <div class="fuel-heading"><h2 id="fuel-title">Let it fly.</h2><p>Scroll to send fuel into the hub.</p></div>
+          <div class="fuel-counter"><output aria-label="Fuel scored">00</output><span>FUEL SCORED</span></div>
+          <img class="fuel-fallback" src="./media/robot/together.webp" width="1500" height="1200" alt="Ripcurrent aimed toward the scoring hub" loading="lazy">
+          <canvas class="fuel-canvas" aria-hidden="true"></canvas>
+          <canvas class="fuel-flight" aria-hidden="true"></canvas>
+          <svg class="fuel-hub" viewBox="0 0 200 300" preserveAspectRatio="none" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="1.3" vector-effect="non-scaling-stroke">
+              <ellipse cx="100" cy="30" rx="87" ry="20" fill="#06333d"/>
+              <path d="M13 30 48 103H152L187 30M48 103V277M152 103V277M48 277H152M70 103V277M130 103V277M48 140H152M48 230H152"/>
+              <path d="m50 109 100 164M150 109 50 273M65 49l17 54M100 50v53M135 49l-17 54" opacity=".3"/>
+              <ellipse cx="100" cy="30" rx="87" ry="20"/>
+              <path d="M26 277H174M36 284H164" opacity=".45"/>
+            </g>
+          </svg>
+          <div class="fuel-footnote"><span>Ripcurrent / 2026</span><span>Keep scrolling ↓</span></div>
+          <div class="fuel-progress" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="record" id="record" aria-labelledby="record-title">
+        <figure class="field" data-in>
+          <div class="field__frame shutter">
+            <img
+              src="./media/photos/competition.webp"
+              width="1600"
+              height="1200"
+              alt="HighTide students gathered with Ripcurrent in the competition arena"
+              loading="lazy"
+            />
+          </div>
+        </figure>
+        <div class="tiles" data-in>
+          <h2 class="tiles__title" id="record-title">World champions.</h2>
+          <div class="tile tile--big">
+            <p class="tile__figure">2×</p>
+            <p class="tile__caption">World champions on Einstein, in 2023 and again in 2026.</p>
+          </div>
+          <div class="tile tile--film">
+            <video
+              src="./media/record-robot.mp4"
+              poster="./media/photos/competition.webp"
+              width="608"
+              height="720"
+              muted
+              loop
+              playsinline
+              preload="none"
+              aria-hidden="true"
+            ></video>
+            <div class="tile__plate">
+              <p class="tile__figure">70–2</p>
+              <p class="tile__caption">Our 2026 in-season record. We won every event we entered.</p>
+            </div>
+          </div>
+          <div class="tile tile--dark">
+            <p class="tile__figure">#1</p>
+            <p class="tile__caption">In the world in 2026, on Match13's world ranking.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="people" aria-labelledby="people-title">
+        <img src="./media/photos/students.webp" width="1200" height="900" loading="lazy" alt="HighTide students working together around Ripcurrent in the competition pits">
+        <div><h2 id="people-title">Built by<br> students.</h2><p>Designed, machined, wired and programmed right here in Ventura.</p></div>
+      </section>
+
+      <section class="join" id="join" aria-labelledby="join-title">
+        <h2 class="sr-only" id="join-title">Apply to join the team</h2>
+        <a
+          class="join__band"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSc440uEf1ipPwRY7QsOOTcfV6rrFr2jQ8zDA5O3M65KvYIGPA/viewform"
+          data-in
+        >
+          <span class="join__sentence"
+            >Join the team. High school students from anywhere in Ventura County, no experience
+            needed.</span
+          >
+          <svg class="join__arrow" viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M12 36 36 12M16 12h20v20" />
+          </svg>
+          <span class="join__word"><span>Apply</span></span>
+        </a>
+      </section>
+
+      <section class="merch" id="merch" aria-labelledby="merch-title">
+        <ul class="lineup" data-in aria-hidden="true">
+          <li data-merch="hoodie">
+            <img src="./media/merch/hoodie.webp" width="911" height="1100" alt="" loading="lazy" />
+          </li>
+          <li data-merch="tee">
+            <img src="./media/merch/tee.webp" width="842" height="1100" alt="" loading="lazy" />
+          </li>
+          <li data-merch="hat">
+            <img src="./media/merch/hat.webp" width="1015" height="647" alt="" loading="lazy" />
+          </li>
+          <li data-merch="retro">
+            <img src="./media/merch/retro.webp" width="873" height="1100" alt="" loading="lazy" />
+          </li>
+        </ul>
+        <div class="menu" data-in>
+          <h2 class="menu__title" id="merch-title">Buy our merch.</h2>
+          <ul class="menu__rows">
+            <li>
+              <a data-merch="hoodie" href="https://team4414.myshopify.com/products/hoodie">
+                <span class="menu__name">Hoodie</span>
+                <span class="menu__options">White or black, XS to 3XL</span>
+                <span class="menu__price">$45</span>
+              </a>
+            </li>
+            <li>
+              <a data-merch="tee" href="https://team4414.myshopify.com/products/t-shirt">
+                <span class="menu__name">T-shirt</span>
+                <span class="menu__options">Teal or black, S to 3XL</span>
+                <span class="menu__price">$20</span>
+              </a>
+            </li>
+            <li>
+              <a data-merch="hat" href="https://team4414.myshopify.com/products/hat">
+                <span class="menu__name">Hat</span>
+                <span class="menu__options">Trucker or dad</span>
+                <span class="menu__price">$30</span>
+              </a>
+            </li>
+            <li>
+              <a data-merch="retro" href="https://team4414.myshopify.com/products/retro-t-shirt">
+                <span class="menu__name">Retro T-shirt</span>
+                <span class="menu__options">S to 3XL</span>
+                <span class="menu__price">$25</span>
+              </a>
+            </li>
+            <li>
+              <a class="menu__shop" href="https://team4414.myshopify.com/">
+                <span class="menu__name">The whole shop</span>
+                <span class="menu__options">team4414.myshopify.com</span>
+                <span class="menu__price" aria-hidden="true">→</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot" aria-labelledby="foot-title">
+      <h2 class="sr-only" id="foot-title">HighTide, Team 4414</h2>
+      <a class="mark" href="#top" aria-label="HighTide, back to top" data-in>
+        <span class="mark__block mark__block--high" style="--h: 0.6; --i: 0">H</span>
+        <span class="mark__block mark__block--high" style="--h: 0.72; --i: 1">I</span>
+        <span class="mark__block mark__block--high" style="--h: 0.86; --i: 2">G</span>
+        <span class="mark__block mark__block--high" style="--h: 0.97; --i: 3">H</span>
+        <span class="mark__block mark__block--tide" style="--h: 1; --i: 4">T</span>
+        <span class="mark__block mark__block--tide" style="--h: 0.92; --i: 5">I</span>
+        <span class="mark__block mark__block--tide" style="--h: 0.78; --i: 6">D</span>
+        <span class="mark__block mark__block--tide" style="--h: 0.64; --i: 7">E</span>
+      </a>
+      <div class="foot__grid">
+        <ul class="foot__links">
+          <li><a href="#ripcurrent">Ripcurrent</a></li>
+          <li><a href="#record">World champions</a></li>
+          <li><a href="#join">Join</a></li>
+          <li><a href="#merch">Merch</a></li>
+        </ul>
+        <ul class="foot__links">
+          <li>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc440uEf1ipPwRY7QsOOTcfV6rrFr2jQ8zDA5O3M65KvYIGPA/viewform"
+              >Apply as a student</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfpb1WZwUZlmu0Un_3O5Cat-z9YULd6QVQe5pS9EVsPIxWjsA/viewform"
+              >Apply as a mentor</a
+            >
+          </li>
+        </ul>
+        <ul class="foot__links">
+          <li><a href="https://www.instagram.com/team4414/">Instagram</a></li>
+          <li><a href="https://github.com/Team4414">GitHub</a></li>
+          <li><a href="https://www.thebluealliance.com/team/4414">The Blue Alliance</a></li>
+          <li><a href="https://www.statbotics.io/team/4414">Statbotics</a></li>
+        </ul>
+        <ul class="foot__links">
+          <li><a href="https://team4414.myshopify.com/">Shop</a></li>
+          <li><a href="https://app.team4414.com">Team login</a></li>
+        </ul>
+        <div class="foot__contact">
+          <p>FIRST Robotics Competition Team 4414</p>
+          <p>Ventura, California</p>
+        </div>
+      </div>
+      <div class="foot__last">
+        <p>© 2026 HighTide. Ripcurrent is drawn from the team's own CAD.</p>
+        <a class="button button--small" href="#top">Back to top</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
+

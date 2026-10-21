@@ -1,0 +1,38 @@
+/* Additions to the saved HighTide design. Original type, spacing and palette retained. */
+.hero{isolation:isolate;background:transparent}
+.hero__ocean{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,49,60,.84),rgba(4,49,60,.32)),linear-gradient(0deg,#094a58 1%,transparent 38%);z-index:-1}
+.hero__title{text-shadow:0 2px 40px #06333d44}
+.fuel-scene{height:330svh;position:relative;background:#06333d}
+.fuel-stage{height:100svh;min-height:560px;position:sticky;top:0;overflow:hidden;isolation:isolate}
+.fuel-heading{position:absolute;top:7%;left:var(--margin);z-index:4;pointer-events:none}
+.fuel-heading h2{font-size:clamp(64px,9.5vw,152px);font-weight:750;line-height:.94;letter-spacing:-.065em}
+.fuel-heading p{font-size:var(--t-small);color:var(--muted);margin-top:20px}
+.fuel-canvas,.fuel-flight{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.fuel-canvas{z-index:1}.fuel-flight{z-index:3}
+.fuel-fallback{position:absolute;width:50%;height:58%;object-fit:contain;left:2%;top:32%;z-index:0}
+.fuel-scene[data-model="ready"] .fuel-fallback{visibility:hidden}
+.fuel-hub{position:absolute;left:69%;top:43%;width:22%;height:41%;overflow:visible;z-index:2;color:var(--muted)}
+.fuel-counter{position:absolute;right:var(--margin);top:8%;text-align:right;font-variant-numeric:tabular-nums;line-height:1}
+.fuel-counter output{display:block;font-size:clamp(60px,8vw,128px);font-weight:700;letter-spacing:-.055em}
+.fuel-counter span{display:block;font-size:12px;letter-spacing:.12em;margin-top:12px;color:var(--muted)}
+.fuel-footnote{position:absolute;left:var(--margin);right:var(--margin);bottom:5%;display:flex;justify-content:space-between;border-top:1px solid #8fd9d433;padding-top:16px;font-size:14px;color:var(--muted)}
+.fuel-progress{position:absolute;bottom:0;left:0;height:3px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left}
+.people{padding:0 var(--margin) var(--section);display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,96px);align-items:center}
+.people img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.people h2{font-size:clamp(40px,6vw,96px);letter-spacing:-.05em;line-height:1;font-weight:700}
+.people p{font-size:var(--t-small);max-width:30ch;color:var(--muted);margin-top:24px}
+@media(max-width:767px){
+ .fuel-scene{height:290svh}.fuel-heading{top:8%}.fuel-heading h2{font-size:64px}.fuel-heading p{font-size:14px;max-width:18ch;margin-top:16px}
+ .fuel-counter{top:25%;right:var(--margin)}.fuel-counter output{font-size:60px}.fuel-counter span{font-size:10px}
+ .fuel-hub{left:73%;top:48%;width:22%;height:31%}
+ .fuel-fallback{width:65%;height:48%;left:0;top:40%}
+ .people{grid-template-columns:1fr;gap:30px}.people h2 br{display:none}.people p{max-width:36ch;margin-top:18px}
+ .fuel-footnote{font-size:12px;bottom:5%;gap:20px}
+}
+@media(prefers-reduced-motion:reduce){
+ .hero__ocean{content:url('./media/crashing-wave-still.jpg')}
+ .fuel-scene{height:auto}.fuel-stage{position:relative;height:90svh}
+ .fuel-heading p{max-width:25ch}.fuel-canvas,.fuel-flight{display:none}
+ .fuel-scene[data-model="ready"] .fuel-fallback{visibility:visible}
+}
