@@ -8,7 +8,7 @@ The original type, teal palette, page content, merchandise links, and interactiv
 - Dark mode is the default, with black-and-white waves and a graphite CAD model. The small moon button switches between dark and original teal colors; the selection is saved on the device.
 - A single continuous Ripcurrent CAD model travels from the hero through the subsystem breakdown, reassembles into the shooting scene, and fades out after shooting. Scroll distance controls all 24 shots and the score; reverse scrolling rewinds it.
 - The fuel uses the official 5.91-inch diameter, measured against the CAD's screen projection. The hub is a simplified projected 3D model based on FIRST's official 2026 drawings: square 47-inch base, hexagonal opening at 72 inches, and the 120.36-inch rear net. It is an illustrative model, not official field CAD.
-- Exactly two album photos: the supplied pit photo and a team photo from the same shared album. No gallery or photo carousel.
+- Two photos: the supplied pit photo and the user-provided championship confetti image. No gallery or photo carousel.
 - Mobile layout, reduced-motion stills, and a saved-robot fallback when WebGL is unavailable.
 
 ## Preview
@@ -37,7 +37,7 @@ Original CAD, artwork, fonts and existing media: the user-supplied HighTide webs
 
 Ocean: Atakan Ozkan, *Sea Waves Crashing the Beach Shore*, Pexels, https://www.pexels.com/video/sea-waves-crashing-the-beach-shore-3116760/ . Converted from the existing local `assets/ocean-waves.mp4` into a silent five-second GIF. License: https://www.pexels.com/license/ .
 
-Photos: user-supplied Team 4414 / HighTide Google Photos album. Exact selected image URLs are recorded in `photo-sources.json`.
+Photos: the user-supplied Team 4414 / HighTide Google Photos album and the replacement championship confetti image. Sources are recorded in `photo-sources.json`.
 
 Hub and fuel references: FIRST 2026 Game Manual, sections 5.4 and 5.10.1, https://firstfrc.blob.core.windows.net/frc2026/Manual/2026GameManual.pdf ; official field dimension drawings, GE-26300 sheet 4, https://firstfrc.blob.core.windows.net/frc2026/FieldAssets/2026-field-dimension-dwgs.pdf . The small tag patterns are illustrative markings, not usable AprilTags.
 
