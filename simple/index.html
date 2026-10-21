@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#00c9dc">
+  <meta name="description" content="We are HighTide. A world championship winning high school robotics team from Ventura County, California. Meet the robot, join the team, or wear the tide.">
+  <title>HighTide â€” Team 4414</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' fill='%2300c9dc'/%3E%3Ctext x='40' y='51' text-anchor='middle' font-family='Arial' font-weight='bold' font-size='30'%3E4414%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="robot-geometry.js" defer></script>
+  <script src="robot.js" defer></script>
+  <script src="app.js" defer></script>
+  <noscript><style>#robot-canvas,.robot-controls,.model-note{display:none}.robot-stage noscript{padding:20px}.robot-stage noscript img{max-height:460px;object-fit:contain}</style></noscript>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="opening" id="top">
+    <header class="frame">
+      <a class="brand" href="#top" aria-label="HighTide, Team 4414 home">HighTide <span>4414</span></a>
+      <nav aria-label="Main navigation"><a href="#robot">The robot</a><a href="#join">Join us</a><a href="#merch">Merch</a></nav>
+    </header>
+  </div>
+    <main id="main">
+      <section class="hero frame" aria-labelledby="title">
+        <h1 id="title" class="enter">We are HighTide</h1>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="intro enter">A world championship winning high school robotics team.</p>
+            <a class="button enter" href="#join">Apply to join the team <span aria-hidden="true">â†—</span></a>
+            <p class="hero-proof enter">Ventura County, California.<br>World champions, 2023 &amp; 2026.</p>
+          </div>
+          <figure class="hero-photo enter"><img src="assets/champions.webp" width="1467" height="1100" alt="Confetti fills the arena as HighTide celebrates at the FIRST World Championship" fetchpriority="high"><figcaption>Big robots. Bigger moments.</figcaption></figure>
+        </div>
+      </section>
+      <section id="robot" class="robot-section frame" aria-labelledby="robot-title">
+        <div class="robot-copy">
+          <h2 id="robot-title" class="reveal">Meet Ripcurrent.</h2>
+          <p class="reveal">Our 2026 robot. Built by students.<br>Ready for a closer look?</p>
+          <figure class="reference reveal"><img src="assets/ripcurrent.webp" width="650" height="650" alt="The real Ripcurrent robot on the competition field" loading="lazy"><figcaption>Ripcurrent, in real life.</figcaption></figure>
+        </div>
+        <div class="robot-stage reveal">
+          <canvas id="robot-canvas" tabindex="0" role="img" aria-label="Interactive 3D robot. Drag to rotate, use arrow keys to orbit, and plus or minus to zoom."></canvas>
+          <div class="robot-fallback" id="robot-fallback" hidden><img src="assets/ripcurrent.webp" width="650" height="650" alt="Ripcurrent robot"><p>3D is unavailable in this browser. Hereâ€™s the real thing.</p></div>
+          <div class="robot-controls"><p id="robot-hint">Drag to rotate · Scroll to zoom</p><div><button id="rotate" aria-pressed="false" type="button">Auto rotate</button><button id="reset" type="button">Reset view</button><button id="internals" aria-pressed="false" type="button">Show internals</button><button id="zoom-in" type="button" aria-label="Zoom in">+</button><button id="zoom-out" type="button" aria-label="Zoom out">−</button></div></div>
+          <p class="model-note">A detailed reconstruction from HighTide’s 2026 CAD references.</p>
+          <noscript><img src="assets/ripcurrent.webp" width="650" height="650" alt="Ripcurrent robot"><p>Enable JavaScript to explore the 3D model.</p></noscript>
+        </div>
+      </section>
+      <section id="join" class="join-section frame" aria-labelledby="join-title">
+        <figure class="team-photo reveal"><img src="assets/team.webp" width="1333" height="1000" alt="HighTide students and their alliance partners celebrating together at the championship" loading="lazy"></figure>
+        <div class="join-copy">
+          <h2 id="join-title" class="reveal">Apply to join<br>the team.</h2>
+          <p class="reveal">Build something youâ€™re proud of.<br>With people youâ€™ll never forget.</p>
+          <a class="button reveal" href="https://docs.google.com/forms/d/e/1FAIpQLSc440uEf1ipPwRY7QsOOTcfV6rrFr2jQ8zDA5O3M65KvYIGPA/viewform" target="_blank" rel="noopener noreferrer">Visit the application <span aria-hidden="true">â†—</span></a>
+          <p class="application-note reveal">Applications are currently closed.<br>Check back in spring 2027.</p>
+        </div>
+      </section>
+      <section id="merch" class="merch-section frame" aria-labelledby="merch-title">
+        <div class="merch-copy"><h2 id="merch-title" class="reveal">Wear the tide.</h2><p class="reveal">Same team spirit. Your size.</p><a class="button reveal" href="https://team4414.myshopify.com/" target="_blank" rel="noopener noreferrer">Buy our merch <span aria-hidden="true">â†—</span></a></div>
+        <a class="shirt-photo reveal" href="https://team4414.myshopify.com/products/t-shirt" target="_blank" rel="noopener noreferrer" aria-label="Shop the official HighTide T-shirt"><img src="assets/shirt.webp" width="1000" height="1000" alt="Official teal HighTide T-shirt with white Team 4414 artwork" loading="lazy"></a>
+      </section>
+      <footer class="frame"><a class="brand" href="#top">HighTide <span>4414</span></a><p>High school students. World-class ambition.</p><a href="https://www.team4414.com/" target="_blank" rel="noopener noreferrer">Official team site <span aria-hidden="true">â†—</span></a></footer>
+    </main>
+</body>
+</html>
