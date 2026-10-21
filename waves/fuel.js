@@ -35,7 +35,7 @@ function paint() {
   // A quiet trajectory ties the CAD to the hub, without adding visual chrome.
   context.beginPath(); context.moveTo(start.x,start.y);
   context.quadraticCurveTo((start.x+target.x)/2,Math.min(start.y,target.y)-arc*2,target.x,target.y);
-  context.strokeStyle='#8fd9d428'; context.lineWidth=1; context.setLineDash([2,9]); context.stroke(); context.setLineDash([]);
+  context.strokeStyle=document.documentElement.dataset.theme==='dark'?'#ffffff28':'#8fd9d428'; context.lineWidth=1; context.setLineDash([2,9]); context.stroke(); context.setLineDash([]);
   const clock = progress * 28;
   let scored = 0;
   for (let i=0;i<24;i++) {

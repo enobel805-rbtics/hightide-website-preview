@@ -5,6 +5,7 @@ Separate editable copy of https://intensity-reasons-cow-descending.trycloudflare
 The original type, teal palette, page content, merchandise links, and interactive CAD breakdown are retained. Additions:
 
 - A locally saved, looping crashing-wave GIF behind the hero.
+- Dark mode is the default, with black-and-white waves and a graphite CAD model. The small moon button switches between dark and original teal colors; the selection is saved on the device.
 - A pinned scroll scene using the original Ripcurrent CAD. Yellow fuel follows an arc into a line-drawn hub. Scroll distance controls all 24 shots and the score; reverse scrolling rewinds it.
 - Exactly two album photos: the supplied pit photo and a team photo from the same shared album. No gallery or photo carousel.
 - Mobile layout, reduced-motion stills, and a saved-robot fallback when WebGL is unavailable.
@@ -24,6 +25,7 @@ Local preview: http://127.0.0.1:4442/ . Public website: https://enobel805-rbtics
 - `index.html`: content and new sections.
 - `waves.css`: additions to the original styles.
 - `fuel.js`: scroll position, CAD rendering, fuel trajectories and counter.
+- `theme.js`: saved color preference and navigation toggle.
 - `assets/index-*.js`, `assets/index-*.css`, `assets/robot-*.js`: saved original build. The model path and font paths use relative URLs for subfolder hosting.
 - `media/`: all media saved locally.
 

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -28,6 +28,7 @@
     <script>
       // .js: scripts run. .webgl: Ripcurrent can be drawn live, so its stills wait for the drawing.
       (function (d) {
+        try { d.dataset.theme = localStorage.getItem("hightide-waves-theme") === "teal" ? "teal" : "dark"; } catch (e) {}
         d.classList.add("js");
         try {
           if (document.createElement("canvas").getContext("webgl2")) d.classList.add("webgl");
@@ -38,6 +39,7 @@
     <link rel="stylesheet" crossorigin href="./assets/index-BnToh6f5.css">
   <link rel="stylesheet" href="./waves.css">
     <script type="module" src="./fuel.js"></script>
+    <script type="module" src="./theme.js"></script>
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>
@@ -50,6 +52,9 @@
         <a href="#ripcurrent">Ripcurrent</a>
         <a href="#join">Join</a>
         <a href="#merch">Merch</a>
+        <button class="theme-toggle" type="button" aria-label="Switch to teal mode" aria-pressed="true" title="Switch color theme">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20.4 15.4A8.8 8.8 0 0 1 8.6 3.6 8.8 8.8 0 1 0 20.4 15.4Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </button>
       </nav>
     </header>
 
