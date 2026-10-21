@@ -1,0 +1,9 @@
+{
+  "game": "2026 FRC REBUILT",
+  "manual": "https://firstfrc.blob.core.windows.net/frc2026/Manual/2026GameManual.pdf",
+  "manual_sections": ["5.4 HUB", "5.10.1 FUEL"],
+  "drawings": "https://firstfrc.blob.core.windows.net/frc2026/FieldAssets/2026-field-dimension-dwgs.pdf",
+  "drawing": "GE-26300 sheet 4 of 4 (PDF page 25)",
+  "dimensions_inches": {"base": [47,47], "body_height":49.75, "opening_across_flats":41.7, "funnel_outer_across_flats":41.932, "rim_height":72, "net_height":120.36, "net_width":58.41, "net_rear_offset":10.26, "tag_center_height":44.25, "fuel_diameter":5.91},
+  "representation": "Simplified projected 3D illustration. Not official field CAD; tag patterns are decorative."
+}
